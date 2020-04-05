@@ -10,7 +10,7 @@ import (
 
 type Calc struct {}
 
-func (Calc) operate(entrada string, operador string) {
+func (Calc) Operate(entrada string, operador string) {
 	cleanedIn := strings.Split(entrada, operador)
 	operationOne := parsear(cleanedIn[0])
 	operationTwo := parsear(cleanedIn[1])
